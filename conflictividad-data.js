@@ -1,3 +1,4 @@
+@@ -0,0 +1,135 @@
 // ════════════════════════════════════════════════════════════════
 // conflictividad-data.js  ·  Venezuela Dashboard  ·  PNUD
 // ════════════════════════════════════════════════════════════════
@@ -12,7 +13,7 @@
 // ════════════════════════════════════════════════════════════════
 
 // ── Resumen del período ──────────────────────────────────────────
-var CONF_RESUMEN = {
+const CONF_RESUMEN = {
   periodo:       '2025 (Enero — Diciembre)',
   fuente:        'OVCS · Informe Anual 2025',
   total:         2219,
@@ -31,7 +32,7 @@ var CONF_RESUMEN = {
 // ── Datos mensuales ───────────────────────────────────────────────
 // tipo: 'DESCA' = Derechos Económicos, Sociales, Culturales y Ambientales
 //       'DCP'   = Derechos Civiles y Políticos
-var CONF_MESES = [
+const CONF_MESES = [
   {
     id: 'm01', mes: 'Enero', num: 1,
     total: 401, desca: 96, dcp: 305, reprimidas: 36,
@@ -107,7 +108,7 @@ var CONF_MESES = [
 ];
 
 // ── Distribución geográfica ───────────────────────────────────────
-var CONF_ESTADOS = [
+const CONF_ESTADOS = [
   { estado: 'Anzoátegui',      protestas: 214, reprimidas: 1, combustible: 2, exigencias: 'Servicios básicos, empleo y acceso a derechos fundamentales' },
   { estado: 'Táchira',         protestas: 202, reprimidas: 2, combustible: 5, exigencias: 'Combustible y servicios básicos' },
   { estado: 'Distrito Capital',protestas: 201, reprimidas: 9, combustible: 0, exigencias: 'Dinámicas políticas y servicios básicos' },
